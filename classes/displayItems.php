@@ -5,10 +5,11 @@
 		static function displayTitle($sectionName, $slideNum) {
 			
 			//Add a preamble if we're on slide 2+
-			if ($slideNum > 0)
+			if ($slideNum > 0) {
 				$preamble = ($slideNum > 1) ? 'Still ' : 'Also ';
-			else
+			} else {
 				$preamble = '';
+			}
 				
 			//Display the section title
 			echo '<div class="top">';
@@ -20,17 +21,19 @@
 		static function displaySlideStart($showSlides) {
 			
 			//Open the slide div if applicable
-			if ($showSlides == 1)
+			if ($showSlides == 1) {
 				echo '<div class="slide">';
-				
+			}
+			
 		}
 		
 		static function displaySlideEnd($showSlides) {
 			
 			//Close the slide div if applicable
-			if ($showSlides == 1)
+			if ($showSlides == 1) {
 				echo '</div>';
-				
+			}
+			
 		}
 		
 		static function displaySection($slideNum, $slides, $showSlides, $sectionName, $resume) {	
