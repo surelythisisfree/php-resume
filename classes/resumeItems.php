@@ -19,11 +19,11 @@ class resumeItems {
 					`section_slide`,
 					`section_class`,
 					`item_content`,
-					`item_id`,
+					`item_order`,
 					`item_slide`
 					from section, item
 					where section_id = item_section
-					order by section_id, item_id asc";
+					order by section_id, item_order asc";
 		
 		//Run the query
 		if ($result = $mysqli->query($query, MYSQLI_STORE_RESULT)) {
